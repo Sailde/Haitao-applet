@@ -1,0 +1,4 @@
+<!--components/Tabs/Tabs.wxml-->
+<view class="titleList">
+    <view class="titleItem {{item.isActive ? 'active':''}}" wx:for="{{titleList}}" wx:for-index="index" wx:key="id">{{item.title}}</view>
+</view>

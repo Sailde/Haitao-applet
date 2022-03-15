@@ -1,0 +1,62 @@
+/**index.wxss**/
+.boxs swiper {
+    width: 750rpx;
+    height: 340rpx;
+}
+
+.boxs swiper image {
+    width: 100%;
+}
+
+/* 导航样式开始 */
+.nav {
+    display: flex;
+}
+
+.nav navigator {
+    flex-grow: 1;
+    padding: 20rpx;
+}
+
+.nav navigator image {
+    width: 100%;
+}
+
+/* 导航样式结束 */
+/* 楼层开始 */
+/* 标题 */
+.index_floor>.floor_group>.floor_title {
+    padding: 10px 0;
+}
+
+.index_floor>.floor_group>.floor_title>image {
+    width: 100%;
+}
+
+/* 标题 */
+/* 内容 */
+.index_floor>.floor_group>.floor_list {
+    overflow: hidden;
+}
+
+.index_floor>.floor_group>.floor_list navigator {
+    float: left;
+    width: 33.33%;
+}
+
+.index_floor>.floor_group>.floor_list navigator:nth-child(2),
+.index_floor>.floor_group>.floor_list navigator:nth-child(3) {
+    border-bottom: 10rpx solid #fff;
+}
+
+.index_floor>.floor_group>.floor_list navigator:nth-last-child(-n + 4) image {
+    height: calc(33.33vw * 386 / 232 /2.08);
+    border-left: 10rpx solid #fff;
+}
+
+.index_floor>.floor_group>.floor_list navigator image {
+    width: 100%;
+}
+
+/* 内容 */
+/* 楼层结束*/

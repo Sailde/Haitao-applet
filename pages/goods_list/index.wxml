@@ -1,0 +1,6 @@
+<!--pages/goods_list/index.wxml-->
+<view>
+    <SearchInput></SearchInput>
+    <Tabs titleList="{{titleList}}"></Tabs>
+</view>
+
