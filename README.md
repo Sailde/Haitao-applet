@@ -4,27 +4,24 @@
 
 
 项目首页：
-
-![Image text](https://raw.githubusercontent.com/Sailde/Haitao-applet/master/image-20220320131244109.png)
 ![Image text](https://user-images.githubusercontent.com/79318110/159149570-22f584b7-9967-45b9-8b28-858b1c791975.png)
 
 
-
 项目：分类
-
-![image-20220320131324866](C:\Users\Sail\AppData\Roaming\Typora\typora-user-images\image-20220320131324866.png)
-
-
+![Image text](https://user-images.githubusercontent.com/79318110/159149596-d4b493e8-8cbf-4582-bdd1-63eae74f8c9a.png)
 
 项目商品列表：
+![Image text](https://user-images.githubusercontent.com/79318110/159149600-1e5c455b-8828-45a8-a6e8-87e7b12186ea.png)
 
-![image-20220320131356946](C:\Users\Sail\AppData\Roaming\Typora\typora-user-images\image-20220320131356946.png)
 
 项目商品详情：
+![Image text](https://user-images.githubusercontent.com/79318110/159149610-ac915593-9acd-48cf-9bf7-7869e9036ee9.png)
 
-![image-20220320131432891](C:\Users\Sail\AppData\Roaming\Typora\typora-user-images\image-20220320131432891.png)
 
 添加购物车和购物车页面展示：
 
-<img src="C:\Users\Sail\AppData\Roaming\Typora\typora-user-images\image-20220320131521314.png" alt="image-20220320131521314" style="zoom: 67%;" /><img src="C:\Users\Sail\AppData\Roaming\Typora\typora-user-images\image-20220320131703298.png" alt="image-20220320131703298" style="zoom: 67%;" />
+![Image text](https://user-images.githubusercontent.com/79318110/159149620-610bee33-9745-408c-a895-5ae7a496d2ba.png)
+![Image text](https://user-images.githubusercontent.com/79318110/159149630-82e05a88-b0f1-4fbf-a1d7-c1994349558d.png)
+
+
 
