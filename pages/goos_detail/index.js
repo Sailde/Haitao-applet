@@ -1,66 +1,66 @@
 // pages/goos_detail/index.js
+// 引入封装好的Promise
+import {
+    request
+} from '../../request/request'
+// 引入es6+语法编译
+import regeneratorRuntime from '../../lib/runtime/runtime'
+
 Page({
-
-    /**
-     * Page initial data
-     */
     data: {
-
+        goodsObj: {}
     },
-
-    /**
-     * Lifecycle function--Called when page load
-     */
+    GoodsInfo: {},
     onLoad: function (options) {
-
+        const {
+            goods_id
+        } = options;
+        this.getGoodsDetail(goods_id)
     },
-
-    /**
-     * Lifecycle function--Called when page is initially rendered
-     */
-    onReady: function () {
-
+    async getGoodsDetail(goods_id) {
+        const res = await request({
+            url: "/goods/detail",
+            data: {
+                goods_id
+            }
+        })
+        this.GoodsInfo = res
+        this.setData({
+            goodsObj: {
+                goods_name: res.goods_name,
+                goods_price: res.goods_price,
+                goods_introduce: res.goods_introduce,
+                // 临时改图标
+                // goods_introduce:res.goods_introduce.replace(/\.webp/g,'jpg'),
+                pics: res.pics
+            }
+        })
     },
-
-    /**
-     * Lifecycle function--Called when page show
-     */
-    onShow: function () {
-
+    handlePrevewImage(e) {
+        const urls = this.GoodsInfo.pics.map(itme => itme.pics_mid)
+        const {
+            current
+        } = e.currentTarget.dataset
+        wx.previewImage({
+            current,
+            urls
+        })
     },
-
-    /**
-     * Lifecycle function--Called when page hide
-     */
-    onHide: function () {
-
-    },
-
-    /**
-     * Lifecycle function--Called when page unload
-     */
-    onUnload: function () {
-
-    },
-
-    /**
-     * Page event handler function--Called when user drop down
-     */
-    onPullDownRefresh: function () {
-
-    },
-
-    /**
-     * Called when page reach bottom
-     */
-    onReachBottom: function () {
-
-    },
-
-    /**
-     * Called when user click on the top right corner to share
-     */
-    onShareAppMessage: function () {
-
+    handleCartAdd(e) {
+        let cart = wx.getStorageSync("cart") || [];
+        let index = cart.findIndex(item => item.goods_id === this.GoodsInfo.goods_id)
+        if (index === -1) {
+            this.GoodsInfo.num = 1;
+            this.GoodsInfo.checked = true;
+            cart.push(this.GoodsInfo);
+        } else {
+            cart[index].num++;
+        }
+        wx.setStorageSync('cart', cart)
+        wx.showToast({
+          title: '加入成功',
+          icon: 'success',
+          mask: true,
+        })
     }
 })

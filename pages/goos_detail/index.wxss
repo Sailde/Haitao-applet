@@ -1,1 +1,123 @@
 /* pages/goos_detail/index.wxss */
+page {
+    padding-bottom: 90rpx;
+}
+
+.detail_swiper swiper {
+    height: 65vw;
+    text-align: center;
+}
+
+.detail_swiper swiper swiper-item image {
+    width: 60%;
+}
+
+/* 标题开始！ */
+.goods_price {
+    padding: 15rpx;
+    color: var(--themeColor);
+    font-size: 32rpx;
+    font-weight: 600;
+}
+
+.goods_name_row {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10rpx 0;
+    border-top: 5px solid #dedede;
+    border-bottom: 5px solid #dedede;
+}
+
+.goods_name_row>.goods_name {
+    flex: 5;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    padding: 15rpx;
+    height: 100rpx;
+    border-right: 1px solid #ccc;
+    color: #000000;
+    font-size: 30rpx;
+}
+
+.goods_name_row>.goods_collect {
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .goods_name_row>.goods_collect>.collect_text {} */
+
+/* 图文详情样式 */
+/* .goods_info {} */
+
+.goods_info .goods_info_title {
+    padding: 20rpx 0;
+    font-size: 32rpx;
+    font-weight: 600;
+    color: var(--themeColor);
+    border-bottom: 5px solid #dedede;
+}
+
+.goods_info .goods_info_content {
+    padding: 1.5rpx 0;
+    border-top: 1px solid #999;
+}
+
+/* 图文详情样式 */
+/* 底部导航样式 */
+.btm_tool {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    height: 90rpx;
+    background-color: #fff;
+    border-top: 1px solid #999;
+}
+
+.btm_tool .tool_item {
+    padding: 10rpx 0;
+    flex: 1;
+    position: relative;
+}
+
+.butn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.btm_tool .tool_item,
+.btm_tool .tool_item navigator {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btm_tool .btn_buy,
+.btm_tool .btn_cart {
+    flex: 2;
+    font-size: 30rpx;
+    font-weight: 600;
+    color: #fff;
+}
+
+.btm_tool .btn_cart {
+    background-color: #FFA300;
+}
+
+.btm_tool .btn_buy {
+    background-color: #FA5450;
+}
+
+/* 底部导航样式 */

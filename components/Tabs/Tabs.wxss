@@ -1,19 +1,18 @@
 /* components/Tabs/Tabs.wxss */
 .titleList {
     display: flex;
-    flex-flow: wrap nowrap;
-    justify-content: center;
-    align-items: center;
 }
 
 .titleItem {
-    padding: 20rpx 0;
-    flex:1;
-    color: var(--themeColor);
-    font-size: 40rpx;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15rpx 0;
+    flex: 1;
+    border-bottom: 2rpx solid currentColor;
 }
 
 .active {
-    border-bottom: 5rpx solid currentColor;
+    border-bottom: 2rpx solid currentColor;
+    color: var(--themeColor);
 }

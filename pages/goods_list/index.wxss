@@ -1,1 +1,40 @@
 /* pages/goods_list/index.wxss */
+.goods_item {
+    display: flex;
+    border: 1rpx solid #ccc;
+}
+
+/* 左边商品图片样式 */
+.goods_item>.goods_img_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+}
+
+.goods_item>.goods_img_wrap>image {
+    width: 70%;
+}
+
+/* 左边商品图片样式 */
+/* 右边商品标题样式 */
+.goods_item>.goods_info_wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    flex: 3;
+}
+
+.goods_item>.goods_info_wrap>.goods_name {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.goods_item>.goods_info_wrap>.goods_price {
+    color: var(--themeColor);
+    font-size: 32rpx;
+}
+
+/* 右边商品标题样式 */

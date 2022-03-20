@@ -1,4 +1,9 @@
 <!--components/Tabs/Tabs.wxml-->
-<view class="titleList">
-    <view class="titleItem {{item.isActive ? 'active':''}}" wx:for="{{titleList}}" wx:for-index="index" wx:key="id">{{item.title}}</view>
+<view>
+    <view class="titleList">
+        <view bindtap="handkeItemTap" data-index="{{index}}" class="titleItem {{item.isActive ? 'active':''}}" wx:for="{{titleList}}" wx:key="id">{{item.title}}</view>
+    </view>
+    <view>
+        <slot></slot>
+    </view>
 </view>
