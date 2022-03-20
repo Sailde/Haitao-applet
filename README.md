@@ -5,7 +5,7 @@
 
 项目首页：
 
-https://raw.githubusercontent.com/Sailde/Haitao-applet/master/image-20220320131244109.png
+![Image text](https://raw.githubusercontent.com/Sailde/Haitao-applet/master/image-20220320131244109.png)
 
 
 
