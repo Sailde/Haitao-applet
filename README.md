@@ -5,7 +5,7 @@
 
 项目首页：
 
-![image-20220320131244109](C:\Users\Sail\AppData\Roaming\Typora\typora-user-images\image-20220320131244109.png)
+https://raw.githubusercontent.com/Sailde/Haitao-applet/master/image-20220320131244109.png
 
 
 
